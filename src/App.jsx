@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Company from "./pages/Company";
@@ -8,26 +8,25 @@ import Home from "./pages/Home";
 import NewProject from "./pages/NewProject";
 
 import Container from "./layout/Container";
+import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ul>
-          <Link to="/">Home</Link>
-          <Link to="/contact">Contato</Link>
-          <Link to="/company">Empresa</Link>
-          <Link to="/newproject">Novo Projeto</Link>
-        </ul>
-        <Container>
+        <Navbar />
+        <Container className="container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/company" element={<Company />} />
             <Route path="/newproject" element={<NewProject />} />
           </Routes>
         </Container>
-        <p>footer</p>
+        <Footer className="footer" />
       </BrowserRouter>
     </div>
   );
