@@ -16,10 +16,11 @@
 }
 
 .item a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 .item a:hover {
   color: #ffbb33;
+  text-decoration: none;
 }
