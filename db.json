@@ -1,48 +1,45 @@
 {
   "projects": [
     {
-      "name": "Projeto teste",
-      "budget": "12000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Projeto atualizado",
-      "budget": "11992",
+      "name": "Projeto 1",
+      "budget": "10000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 6
     },
     {
-      "name": "Projeto teste",
-      "budget": "222222",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
+      "name": "Projeto 2",
+      "budget": "12000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "name": "Projeto",
-      "budget": "19900",
-      "cost": 0,
-      "services": [],
-      "id": 4
+      "cost": 11022,
+      "services": [
+        {
+          "name": "Serviço 1",
+          "cost": "6000",
+          "description": "Descrição 1",
+          "id": "ab0c140f-5262-4fb9-aea0-1ced386cda2c"
+        },
+        {
+          "name": "Serviço 2",
+          "cost": "5000",
+          "description": "Descrição 2",
+          "id": "45b83ca3-229c-480b-8763-79f09dc93ec5"
+        },
+        {
+          "name": "aa",
+          "cost": "22",
+          "description": "aa",
+          "id": "b5bf13fe-4ffe-40f3-8e37-d273209147ce"
+        }
+      ],
+      "id": 7
     }
   ],
   "categories": [

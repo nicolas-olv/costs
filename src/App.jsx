@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 import Company from "./components/pages/Company";
 import Contact from "./components/pages/Contact";

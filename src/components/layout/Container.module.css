@@ -16,5 +16,5 @@
 }
 
 .min-height {
-  min-height: 75%;
+  flex-grow: 4;
 }

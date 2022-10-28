@@ -64,6 +64,8 @@ function Project() {
       .then((data) => {
         setServices(data.services);
         setShowServiceForm(false);
+        setMessage("Serviço adicionado com sucesso");
+        setType("success");
       })
       .catch((err) => console.log(err));
   }
@@ -100,7 +102,7 @@ function Project() {
     setShowServiceForm(!showServiceForm);
   }
 
-  function editPost(project) {
+  function editProject(project) {
     setMessage("");
 
     if (project.budget < project.cost) {
@@ -154,7 +156,7 @@ function Project() {
               ) : (
                 <div className={styles.project_info}>
                   <ProjectForm
-                    handleSubmit={editPost}
+                    handleSubmit={editProject}
                     btnText={"Concluir edição"}
                     projectData={project}
                   />
