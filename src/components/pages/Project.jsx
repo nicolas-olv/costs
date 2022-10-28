@@ -51,7 +51,6 @@ function Project() {
       project.services.pop();
       return false;
     }
-
     project.cost = newCost;
 
     fetch(`http://localhost:5000/projects/${project.id}`, {
@@ -63,6 +62,7 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
+        setServices(data.services);
         setShowServiceForm(false);
       })
       .catch((err) => console.log(err));
